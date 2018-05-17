@@ -1,0 +1,72 @@
+package com.may16;
+import java.util.*;
+interface Bank
+{
+	void createAccount();
+	void deposit();
+	void withDraw();
+	void balCheck();
+}
+
+
+public class mainClass implements Bank
+{
+	int balance=0;
+	public void createAccount() {
+		Scanner ob=new Scanner(System.in);
+		System.out.println("enter username");
+		String username=ob.next();
+		System.out.println("enter password");
+		int password=ob.nextInt();	
+		System.out.println("your balance is "+balance);
+	}
+
+	public static void deposit() {
+		System.out.println("enter the amount you want to deposit");
+		Scanner ob=new Scanner(System.in);
+		int amount=ob.nextInt();
+		balance=balance+amount;
+		System.out.println("your balance is "+balance);
+	}
+
+	public void withDraw() {
+		System.out.println("enter the amount you want to withdraw");
+		Scanner ob=new Scanner(System.in);
+		int amount=ob.nextInt();
+		balance=balance-amount;
+		System.out.println("your balance is "+balance);
+	}
+
+	public void balCheck() {
+		System.out.println("your balance is "+balance);
+	}
+public static void main(String[] args) {
+	mainClass ob1=new mainClass();
+	System.out.println("enter the option you want from createccount,deposit,withdraw,checkbalance");
+	Scanner ob=new Scanner(System.in);
+	String ab=ob.next();
+	if(ab.equals("createaccount"))
+	{
+		ob1.createAccount();
+	}
+	else if(ab.equals ("deposit"))
+	{
+		ob1.deposit();
+	}
+	else if(ab.equals("withdraw"))
+	{
+		ob1.withDraw();
+	}
+	else if(ab.equals("checkbalance"))
+	{
+		ob1.balCheck();
+	}
+	else
+	{
+		System.out.println("please enter valid option");
+	}
+	}
+}
+	
+
+
