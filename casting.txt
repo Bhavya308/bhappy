@@ -1,0 +1,17 @@
+package com.may16;
+
+public class castingexmp {
+	public static void main(String[] args) {
+		
+	
+	//implicit casting
+	byte a = 10;
+	int b =a;
+	//explicit casting
+	int c= 20;
+	byte d= (byte) c;
+	System.out.println(b);
+	System.out.println(d);
+	}
+
+}
