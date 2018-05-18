@@ -1,0 +1,17 @@
+package com.may18;
+import java.util.*;
+
+public class Setexample {
+	public static void main(String[] args) {
+		Set ts=new LinkedHashSet();//sort the elements//we can also use treeset and hash set
+		Float i=new Float(99.99);
+		ts.add(i);
+		Float j=new Float(889.99);
+		ts.add(j);
+		Float k=new Float(19.99);
+		ts.add(k);
+		
+		System.out.println(ts);
+	}
+
+}
