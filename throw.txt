@@ -1,0 +1,18 @@
+package com.may18;
+import java.util.*;
+public class exceptionexmp1 extends Thread{
+	public static void main(String[] args) throws Exception{
+		Scanner ob=new Scanner(System.in);
+		System.out.println("enter ur marks");
+		int a=ob.nextInt();
+		if(a<=0)
+			throw new Exception("number should be greater than 0");
+		else
+			System.out.println("entered number is ok");
+
+		
+	}
+
+	
+	
+	}
