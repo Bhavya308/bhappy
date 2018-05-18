@@ -1,0 +1,66 @@
+package com.may18;
+
+import java.util.ArrayList;
+
+public class Employee {
+public static void main(String[] args) {
+	ArrayList al=new ArrayList();
+	Address ad=new Address(10,"mg road");
+	Emp ob=new Emp(101,"Bhavya",ad);
+	Emp ob1=new Emp(102,"jaan",ad);
+	al.add(ob);
+	al.add(ob1);
+	System.out.println(al);
+}
+}
+------------------------------------------------------------------------package com.may18;
+import java.util.*;
+
+public class Emp {
+	int empno;
+	String name;
+	Address add;
+	public int getEmpno() {
+		return empno;
+	}
+	public void setEmpno(int empno) {
+		this.empno = empno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	Emp(int empno,String name,Address add)
+	{
+		this.empno=empno;
+		this.name=name;
+		this.add=add;
+	}
+	public String toString()
+	{
+		return (empno+" "+name+" "+add);
+	}
+	----------------------------------------------------------------------------
+package com.may18;
+
+import java.util.*;
+
+public class Address {
+	int roadno;
+	String street;
+	Address(int roadno,String street)
+	{
+		this.roadno=roadno;
+		this.street=street;
+	}
+public String toString()
+{
+	return(roadno+" "+street);
+}
+}
+
+
+}
