@@ -1,0 +1,13 @@
+package com.may18;
+import java.util.*;
+public class Throws1 extends Thread {
+	public static void main(String[] args) throws Exception
+	{
+	for(int i=0;i<=20;i++)
+	{
+		System.out.println(i);
+		sleep(1000);
+	}
+	}
+
+}
